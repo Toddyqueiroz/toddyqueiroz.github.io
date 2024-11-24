@@ -1,0 +1,322 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Fonte principal */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilos para o header */
+
+header {
+    background-color: rgba(14, 163, 126, 0.979);
+    color: #fff;
+    padding: 20px;
+    text-align: left; /* Alinha todo o conteúdo do header à esquerda */
+    margin-bottom: 0px;
+    padding-left: 200px; /* Ajuste aqui para dar mais espaço à esquerda */
+}
+
+/* Container para o ícone e o título, alinhados na horizontal */
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Dá espaço entre o título/ícone e a descrição */
+}
+
+header i {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2.6em;
+    margin-bottom: 0;
+    /* Remove a margem inferior para se ajustar mais ao ícone */
+}
+
+header p {
+    font-size: 1.0em;
+    margin-bottom: 20px;
+    /* Espaço entre o parágrafo e a navegação */
+}
+
+/* Estilo para o nav */
+header nav {
+    width: 100%;
+    /* Navegação ocupa 100% da largura */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    display: block;
+    width: 150px;
+    /* Largura dos botões */
+    height: 40px;
+    /* Altura dos botões */
+    background-color: rgb(6, 194, 147);
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    line-height: 40px;
+    /* Alinha o texto verticalmente */
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Coloca o texto em maiúsculas */
+    border-radius: 0;
+    /* Sem borda arredondada */
+    margin: 0;
+    /* Remove qualquer margem externa */
+    transition: background-color 0.3s;
+    /* Transição suave */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+header nav ul li a:hover {
+    background-color: rgb(64, 133, 116);
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Faixa Welcome */
+.welcome-banner {
+    background-color: #e3f1f0; /* Fundo verde quase branco */
+    color: rgb(34, 34, 34); /* Texto preto/cinza bem escuro */
+    text-align: center;
+    padding: 60px 10px; /* tamanho da faixa */
+    margin: 0;
+    margin-bottom: 0;
+    
+}
+
+.welcome-banner a {
+    color: rgb(7, 161, 172); /* Cor padrão do link */
+    font-weight: bold; /* Deixa o link em negrito */
+}
+
+.welcome-banner a:hover {
+    color: rgb(115, 253, 253); /* Cor ao passar o mouse */
+}
+
+/* Título na faixa */
+.welcome-banner h2 {
+    font-size: 50px; /* Tamanho grande do título */
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+}
+
+/* Parágrafo na faixa */
+.welcome-banner p {
+    max-width: 1160px; /* Limita a largura do parágrafo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    font-size: 16px; /* Tamanho da mensagem */
+    text-align: center; /* Alinha o texto no centro */
+    line-height: 1.5; /* Ajusta a altura da linha para melhorar a legibilidade */
+}
+
+
+/* Seções do main */
+main {
+    background-color: white;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+}
+
+/* Adicionando imagens nas seções */
+main section img {
+    width: 80%;
+    max-width: 350px;
+    margin-top: 1px;
+    border-radius: 0px;
+}
+
+/* Cards de informações */
+main section > section {
+    display: flex; /* Usando Flexbox para layout */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center; /* Centraliza os cards verticalmente, se a altura for maior que o necessário */
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+/* Estilo dos cards */
+main section > section div {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1; /* Faz com que os cards ocupem o mesmo espaço */
+    min-width: 350px; /* Largura mínima dos cards */
+    max-width: 300px; /* Largura máxima dos cards */
+    height: 400px; /*define autura maxima dos cards*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: space-between; /* Distribui o espaço entre os elementos do card */
+}
+
+main section>section div h3{ /* Titulo dos cards */
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+main section>section div p { /* texto no card*/
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Estilo do link como botão dentro de cada card */
+main section > section div a {
+    display: block;
+    width: 150px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    background-color: rgb(6, 194, 147); /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    line-height: 40px; /* Alinha o texto verticalmente */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Coloca o texto em maiúsculas */
+    border-radius: 0; /* Sem borda arredondada */
+    margin: 0; /* Remove a margem externa */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Efeito de hover para o botão */
+main section > section div a:hover {
+    background-color: rgb(64, 133, 116); /* Cor do fundo ao passar o mouse */
+}
+
+/* Efeito de foco no botão */
+main section > section div a:focus {
+    outline: 2px solid #004d3d; /* Borda ao focar o botão */
+    background-color: rgb(5, 165, 131); /* Cor do fundo ao focar */
+    color: white; /* Cor do texto ao focar */
+}
+
+/* Faixa abaixo do main */
+section.bottom-banner {
+    background-color: #e3f1f0; /* Fundo verde quase branco */
+    padding: 60px 15px; /* tamanho da faixa */
+    text-align: center;
+  }
+  
+  /* Título da faixa */
+  section.bottom-banner h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Container para os botões */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+  }
+  
+  /* Estilo dos botões redondos */
+  .button-container .btn {
+    display: inline-block;
+    background-color: rgb(6, 194, 147);
+    color: white;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Torna os botões redondos */
+    text-align: center;
+    line-height: 60px; /* Centraliza o ícone dentro do botão */
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .button-container .btn:hover {
+    background-color: rgb(64, 133, 116); /* Efeito de hover para os botões */
+  }
+  
+  /* Ícones dentro dos botões (usando FontAwesome) */
+  .button-container .btn i {
+    font-size: 28px; /* Tamanho do ícone */
+  }
+  
+
+/* Estilo para o footer */
+footer {
+    background-color: rgba(14, 163, 126, 0.979); /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento em cima e embaixo */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 0px; /* Evita margem inferior adicional */
+    width: 100%; /* Faz o footer ocupar toda a largura */
+    position: relative; /* Garante que o footer se posicione corretamente */
+    font-size: 13px;
+}
+
+/* Alinhando o conteúdo do footer */
+.footer-content {
+    max-width: 1200px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo dentro do footer */
+    padding: 0 20px; /* Adiciona padding nas laterais para evitar que o conteúdo grude nas bordas */
+}
+
+/* Estilo para os links do copyright */
+.footer-content a {
+    color:rgb(193, 252, 231); /* Cor do link - palavras em branco */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.footer-content a:hover {
+    background-color: rgba(96, 235, 200, 0.452); /* Cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para os botões de redes sociais */
+.footer-buttons {
+    display: flex; /* Usando Flexbox para alinhar os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima dos botões */
+}
+
+.footer-btn {
+    background-color: rgb(6, 194, 147); /* Cor dos botões */
+    color: white; /* Cor do ícone */
+    padding: 10px; /* Tamanho dos botões */
+    border: none; /* Remove qualquer borda */
+    font-weight: bold; /* Texto em negrito, mas não é necessário já que temos apenas ícones */
+    transition: background-color 0.3s; /* Transição suave de cor */
+    display: flex; /* Alinha ícone no centro */
+    align-items: center; /* Centraliza verticalmente o ícone */
+    justify-content: center; /* Centraliza horizontalmente o ícone */
+    width: 40px; /* Largura dos botões (botões quadrados) */
+    height: 40px; /* Altura dos botões (botões quadrados) */
+    text-decoration: none; /* Remove o sublinhado do link */
+    cursor: pointer; /* Garante que o cursor seja de ponteiro para interações */
+}
+
+/* Estilo ao passar o mouse nos botões */
+.footer-btn:hover {
+    background-color: rgb(64, 133, 116); /* Cor ao passar o mouse nos botões */
+}
